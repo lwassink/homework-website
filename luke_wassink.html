@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luke Wassink Vegan Mac and Cheese</title>
+  </head>
+  <body>
+    <header>
+      <h1>Wassink</h1>
+
+      <img src="a_A_logo.png" alt="a/A logo"/>
+
+      <h2>Vegan Mac and Cheese</h2>
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <aside>
+        <figure>
+          <img src="mac_and_cheese_pic.jpg" alt="vegan mac and cheese" />
+        </figure>
+        <figcaption>
+          <a href="https://en.wikipedia.org/wiki/Veganism">Vegan</a> mac and cheese.
+        </figcaption>
+
+        <h2>Description</h2>
+        <a name="description"/>
+          <p>There are many recipes for vegan mac and cheese.
+          Most are gross.
+          Some even use daiya cheese.
+          This one is shockingly delicious.
+          </p>
+
+          <h2>Ingredients</h2>
+          <a name="ingredients"/>
+            <ul>
+              <li>10 oz dried macaroni</li>
+              <li>8 oz yellow potatoes</li>
+              <li>1 medium carrot, diced</li>
+              <li>1 small yellow onion, diced (about 1/3 cup)</li>
+              <li>1/2 cup raw cashews</li>
+              <li>1/4 cup Crisco</li>
+              <li>2 tbsp nutritional yeast</li>
+              <li>1 tbsp lemon juice</li>
+              <li>about 1 tsp salt</li> <li>1/4 tsp garlic powder</li>
+              <li>1 pinch cayenne pepper</li>
+            </ul>
+      </aside>
+
+      <h2>Directions</h2>
+      <a name="directions"/>
+        <ol>
+          <li>Cook macaroni to al dente, drain, and set aside.</li>
+          <li>Bring several cups of water to a boil.
+            Add potatoes, carrot, and onion.
+            Cook until tender, about 10 minutes.
+          </li>
+          <li>Transfer cooked veggies to a blender.
+            Add 3/4 of their cooking liquid, along with all other ingredients.
+            Blend until smooth.
+          </li>
+          <li>Pour over noodles.
+            Add salt to taste
+            Serve immediately.
+          </li>
+        </ol>
+    </section>
+
+    <section>
+      <form action="/reviews" method="post">
+        <label for="name">
+          Name:
+        </label>
+        <input type="text" id="name" name="user[name]">
+
+        <label for="rating">
+          Rating
+        </label>
+        1<input type="radio" value="1" name="rating" checked>
+        2<input type="radio" value="2" name="rating">
+        3<input type="radio" value="3" name="rating">
+        4<input type="radio" value="4" name="rating">
+        5<input type="radio" value="5" name="rating">
+
+        <label for="user_cooking_expertise">
+          Cooking Expertise:
+        </label>
+        <select name="user[cooking_expertise" id="user_cooking_expertise">
+          <option value="nil" selected disabled>Select Cooking Expertise</option>
+          <option value="somtimes">Sometimes Cook</option>
+          <option value="everyday">Cook Everyday</option>
+          <option value="hoby">Cooking is a Hobby</option>
+          <option value="pro">Profesional Chef</option>
+        </select>
+
+        <label>
+          Cooking Expertise:
+          <textarea name="review" cols="30" rows="10"></textarea>
+        </label>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
+    <footer>
+      Source: <a href="http://veganyumminess.com/creamy-vegan-mac-and-cheese/">vegan ymminess</a>
+    </footer>
+    <!--Source: http://veganyumminess.com/creamy-vegan-mac-and-cheese/-->
+  </body>
+</html>
